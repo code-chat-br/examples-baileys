@@ -1,0 +1,23 @@
+{
+  "name": "exemples-baileys",
+  "version": "1.0.0",
+  "main": "initializer.js",
+  "license": "MIT",
+  "author": {
+    "name": "jrCleber",
+    "url": "https://github.com/jrCleber/exemples-baileys"
+  },
+  "scripts": {
+    "app": "node ./initializer.js",
+    "test": "nodemon ./initializer.js"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.0.1",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "pino": "^7.8.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
