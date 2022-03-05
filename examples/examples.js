@@ -277,9 +277,9 @@ exports.chatBot = (sock) => {
                   key: { fromMe: true },
                   message: {
                      extendedTextMessage: {
-                        text: 'https://github.com/jrCleber/exemples-baileys',
-                        matchedText: 'https://github.com/jrCleber/exemples-baileys',
-                        canonicalUrl: 'https://github.com/jrCleber/exemples-baileys',
+                        text: 'https://github.com/code-chat-br/exemples-baileys',
+                        matchedText: 'https://github.com/code-chat-br/exemples-baileys',
+                        canonicalUrl: 'https://github.com/code-chat-br/exemples-baileys',
                         title: 'GitHub - jrCleber/exemples-baileys',
                         description: 'Contribute to jrCleber/exemples-baileys development by creating an account on GitHub.',
                         // optional
