@@ -61,8 +61,8 @@ const connectOnWhatsapp = async () => {
       auth: state,
       logger: P({ level: 'error' }),
       // version: [2, 2204, 13],
-      version,
-      async getMessage(key) {
+      version: version,
+      getMessage: async key => {
          return { conversation: 'oi' };
       },
    }
