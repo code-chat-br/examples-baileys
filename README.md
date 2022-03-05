@@ -2,7 +2,7 @@
 
 ### [**Telegram group**](https://t.me/codechatBR)
 
-This project is based on the use of the [**Baileys**](https://adiwajshing.github.io/Baileys/) library, and its main objective is to facilitate its use. And all the functions exemplified here, encapsulate the functions of the base library.
+This project is based on the use of the [**Baileys**](https://adiwajshing.github.io/Baileys/) library, and its main objective is to facilitate its use.
 
 ## Getting started Multidevice
 
