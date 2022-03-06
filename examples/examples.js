@@ -73,7 +73,7 @@ exports.chatBot = (sock) => {
       const msg = messages[0]
       const jid = msg.key.remoteJid
 
-      if (!isGroup(jid) && !msg.key.fromMe) {
+      if (!isGroup(jid) && !msg.key.fromMe && jid !== 'status@broadcast') {
          console.log("MESSAGE: ", msg)
 
          sock.sendReadReceipt(jid, msg.key.participant, [msg.key.id])
