@@ -77,7 +77,7 @@ const connectOnWhatsapp = async () => {
       const msg = messages[0]
       const jid = msg.key.remoteJid
 
-      if (msg.key.fromMe === false) {
+      if (msg.key.fromMe === false && jid !== 'status@broadcast') {
 
          await sock.presenceSubscribe(jid)
          await delay(500)
