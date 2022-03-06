@@ -69,12 +69,19 @@ exports.chatBot = (sock) => {
       return await sock.sendMessage(jid, msg)
    }
 
-   sock.ev.on('messages.upsert', ({ messages, type }) => {
+   sock.ev.on('messages.upsert', async ({ messages, type }) => {
       const msg = messages[0]
       const jid = msg.key.remoteJid
 
       if (!isGroup(jid) && !msg.key.fromMe && jid !== 'status@broadcast') {
          console.log("MESSAGE: ", msg)
+
+         try {
+            const pic = await sock.profilePictureUrl(jid)
+            console.log('PICTURE: ', pic)
+         } catch (error) {
+            console.log('IMG ERROR: ', error)
+         }
 
          sock.sendReadReceipt(jid, msg.key.participant, [msg.key.id])
 
