@@ -172,7 +172,7 @@ const result = await sock.sendMessage('<phoneNumber>@s.whatsapp.net', templateBu
 ```js
 const sendImage = {
    // optional
-    aption: '```IMAGE TITLE```',
+   caption: '```IMAGE TITLE```',
    image: {
       url: './assets/image.jpg',
       // url: 'https://domain/image.jpeg'

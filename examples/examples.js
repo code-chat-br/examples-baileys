@@ -76,12 +76,12 @@ exports.chatBot = (sock) => {
       if (!isGroup(jid) && !msg.key.fromMe && jid !== 'status@broadcast') {
          console.log("MESSAGE: ", msg)
 
-         try {
-            const pic = await sock.profilePictureUrl(jid)
-            console.log('PICTURE: ', pic)
-         } catch (error) {
-            console.log('IMG ERROR: ', error)
-         }
+         // try {
+         //    const pic = await sock.profilePictureUrl(jid)
+         //    console.log('PICTURE: ', pic)
+         // } catch (error) {
+         //    console.log('IMG ERROR: ', error)
+         // }
 
          sock.sendReadReceipt(jid, msg.key.participant, [msg.key.id])
 
